@@ -1,0 +1,614 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+
+nav{
+  height: 8.5vh;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgba(250, 250, 252, 0.8);
+  z-index: 9999;
+  position: fixed;
+}
+nav>section{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+nav>section>.logo{
+  height: 100%;
+  width: 5%;
+  padding-left: 15px;
+  padding-top: 17px;
+
+  /* margin-top: 10px; */
+}
+nav>section>.list{
+  height: 100%;
+  width: 80%;
+}
+nav>section>.list>ol{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 1px;
+}
+nav>section>.list>ol>li>a{
+  text-decoration: none;
+  color: rgb(93, 95, 96);
+  font-size: 19px;
+  /* padding-left: 60px; */
+  padding-top: 1px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 25px;
+  justify-content: space-between;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+nav>section>.list>ol>li>a:hover{
+  cursor: pointer;
+}
+nav>section>.search{
+  height: 100%;
+  width: 5%;
+  padding-left: 60px;
+  padding-top: 15px;
+  margin-top: 8px;
+}
+nav>section>.cart{
+  height: 100%;
+  /* width: 0%; */
+  padding-top: 15px;
+  margin-left: 50px;
+  margin-top: 8px;    
+}
+
+
+.part1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 65px;
+}
+
+.part1>div{
+  position: absolute;
+  height: 105vh;
+  width: 100%;
+  padding-top: 100px;
+  background-image: url("https://www.apple.com/v/home/bn/images/heroes/mothers-day-2024/hero_md24__e3yulubypvki_large_2x.jpg");
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+}
+.part1>div>h2{
+  font-size: 85px;
+  line-height: 1.07143;
+  font-weight: 550;
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-top: 450px;
+  text-align: center;
+}
+.part1>div>p{
+  font-size: 43px;
+  line-height: 1.14286;
+  font-weight: 500;
+  letter-spacing: .007em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-top: 15px;
+  text-align: center;
+}
+.part1>div>button{
+  height: 65px;
+  width: 130px;
+  border-radius: 50px;
+  background-color: #0071e3;
+  border: none;
+  color: white;
+  font-size:x-large;
+  text-align: center;
+  margin-left:890px ;
+  margin-top: 10px;
+}
+
+
+
+.part2{
+  height: 110vh;
+  width: 100vw;
+  background:linear-gradient(rgb(151, 206, 225),white);
+  cursor: pointer;
+  margin-top: -120px;
+}
+
+.part2>.backpage{
+  text-align: center;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+  line-height: 43px;
+}
+
+.part2>.backpage>.div1>img{
+  margin-top: 80px;
+  height: 75px;
+  width: 300px;
+}
+
+.part2>.backpage>.div1>.text2{
+  font-size: 43px;
+  font-weight: 450;
+  padding-top: 10px;
+}
+
+.part2>.backpage>.div1>.text3{
+  font-size: 35px;
+  padding-top: 15px;
+  color: rgb(63, 74, 84);
+  font-weight: 400;
+}
+
+.part2>.backpage>.buttons>.button1{
+  height: 65px;
+  width: 195px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border-radius: 40px;
+  font-size: 25px;
+  border-color:rgb(63, 74, 84);;
+}
+
+.part2>.backpage>.buttons>.button2{
+  height: 65px;
+  width: 195px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  background-color: transparent;
+  color:  rgb(63, 74, 84);
+  border-radius: 40px;
+  border-color: rgb(63, 74, 84);
+  font-size: 25px;
+}
+
+.part2>.backpage>.buttons>.button2:hover{
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+}
+
+.part2>.backpage>.image_div>.ipad_image{
+  margin-top: 20px;
+  height: 80vh;
+  width: 20vw;
+}
+/* //------------------------------------------------ */
+.part3{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 6px;
+}
+
+.part3>.backpage{
+  position: absolute;
+  height: 105vh;
+  width: 100%;
+  padding-top: 60px;
+  background-image: url(./assets/ipad.png);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+}
+.part3>.backpage>.div2>.text1{
+  font-size: 90px;
+  font-weight: 500;
+  color: white;
+}
+.part3>.backpage>.div2>.text2{
+  font-size: 43px;
+  font-weight: 450;
+  padding-top: 6px;
+  color: white;
+}
+.part3>.backpage>.div2>.text3{
+  font-size: 32px;
+  padding-top: 15px;
+  color: rgb(128, 137, 146);
+  font-weight: 400;
+}
+.part3>.backpage>.div2>.buttons>.button1{
+  height: 65px;
+  width: 195px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  font-size: 25px;
+  border-color:#0071e3;;
+}
+
+.part3>.backpage>.div2>.buttons>.button2{
+  height: 65px;
+  width: 195px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  background-color: transparent;
+  color:  #0071e3;
+  border-radius: 40px;
+  border-color: #0071e3;
+  font-size: 25px;
+}
+
+.part3>.backpage>.div2>.buttons>.button2:hover{
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+}
+
+/* ------------------------------------------------------- */
+
+.part4{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 6px;
+}
+
+.part4>.half1{
+  position: absolute;
+  height: 105vh;
+  width: 48.5%;
+  padding-top: 60px;
+  margin-top: 55px;
+  margin-left: 18px;
+  /* margin-left: -7px; */
+  background-image: url(https://www.apple.com/in/home/promos/apple-watch-series-9/images/promo_apple_watch_series_9_order__b3u85rm9zf6u_large_2x.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+.part4>.half1>.div3>.text1{
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  margin-top: 22px;
+}
+.part4>.half1>.div3>.text2{
+  font-size: 22px;
+  font-weight: 450;
+  color: rgb(192, 35, 35);
+}
+.part4>.half1>.div3>.text3{
+  font-size: 32px;
+  font-weight: 450;
+  color: white;
+}
+.part4>.half1>.div3>.buttons>.button1{
+  height: 55px;
+  width: 160px;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  border-color:#0071e3;
+}
+
+.part4>.half1>.div3>.buttons>.button2{
+  height: 55px;
+  width: 95px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  background-color: transparent;
+  color:  #0071e3;
+  border-radius: 40px;
+  border-color: #0071e3;
+  font-size: 20px;
+}
+
+.part4>.half1>.div3>.buttons>.button2:hover{
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+}
+
+
+.part4>.half2{
+  position: absolute;
+  height: 105vh;
+  width: 48.5%;
+  margin-left: 955px;
+  padding-top: 60px;
+  margin-top: 55px;
+  background-image: url(https://www.apple.com/v/home/bn/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_large_2x.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+}
+.part4>.half2>.div3>.text1{
+  font-size: 55px;
+  font-weight: 650;
+  color: rgb(30, 30, 30);
+  margin-top: 22px;
+}
+.part4>.half2>.div3>.text2{
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 6px;
+  color: rgb(46, 46, 46);
+}
+.part4>.half2>.div3>.buttons>.button1{
+  height: 55px;
+  width: 160px;
+  margin-top: 12px;
+  margin-right: 10px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  border-color:#0071e3;
+}
+
+.part4>.half2>.div3>.buttons>.button2{
+  height: 55px;
+  width: 95px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  background-color: transparent;
+  color:  #0071e3;
+  border-radius: 40px;
+  border-color: #0071e3;
+  font-size: 20px;
+}
+
+.part4>.half2>.div3>.buttons>.button2:hover{
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+}
+/* ------------------------------------------------------- */
+.part5{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 6px;
+}
+
+.part5>.half1{
+  position: absolute;
+  height: 105vh;
+  width: 48.5%;
+  padding-top: 60px;
+  margin-top: 90px;
+  margin-left: 18px;
+  /* margin-left: -7px; */
+  background-image: url(https://www.apple.com/v/home/bn/images/promos/homepod-mini/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+.part5>.half1>.div4>.text1{
+  font-size: 60px;
+  font-weight: 620;
+  color: black;
+  margin-top: 22px;
+}
+.part5>.half1>.div4>.buttons>.button1{
+  height: 55px;
+  width: 160px;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  border-color:#0071e3;
+}
+
+.part5>.half1>.div4>.buttons>.button2{
+  height: 55px;
+  width: 95px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  background-color: transparent;
+  color:  #0071e3;
+  border-radius: 40px;
+  border-color: #0071e3;
+  font-size: 20px;
+}
+
+.part5>.half1>.div4>.buttons>.button2:hover{
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+}
+
+
+.part5>.half2{
+  position: absolute;
+  height: 105vh;
+  width: 48.5%;
+  margin-left: 955px;
+  padding-top: 60px;
+  margin-top: 90px;
+  background-image: url(https://www.apple.com/v/home/bn/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large_2x.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+}
+.part5>.half2>.div4>.text1{
+  font-size: 55px;
+  font-weight: 620;
+  color: rgb(30, 30, 30);
+  margin-top: 22px;
+}
+.part5>.half2>.div4>.text2{
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 6px;
+  color: rgb(46, 46, 46);
+}
+.part5>.half2>.div4>.buttons>.button1{
+  height: 55px;
+  width: 220px;
+  margin-top: 12px;
+  margin-right: 10px;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  border-color:#0071e3;
+}
+
+/* ------------------------------------------------------- */
+.carousel{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+.carousel-inner>.carousel-item {
+  
+    height: 170vh;
+    width: 80%; 
+    object-fit: cover; 
+    margin-left: 200px;
+    /* display: flex; */
+  overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+/* -------------------------------------------------------- */
+
+.marquee{
+  padding-top: 90px;
+}
+
+/* --------------------------------------------------------- */
+
+footer{
+  height: 106vh;
+  width: 98vw;
+  margin-top: 16px;
+  padding-top: 20px;
+  background-color:rgb(245, 247, 247);
+}
+footer>.main{
+  display: flex;
+  justify-content:space-around ;
+  color: rgb(65, 65, 65);
+  margin-left:150px ;
+  margin-right: 150px;
+}
+.footer>ul{
+  list-style: none;
+  padding: 20px;
+}
+.footer>ul>li{
+ 
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 450;
+   
+}
+.footer>ul>li>h5{
+  font-size: 20px;
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+hr{
+  width: 80%;
+ 
+}
+.f-line>p{
+  margin-left: 265px;
+  font-size: 18px;
+  color: rgb(109, 109, 109);
+ 
+}
+.footer-menu>ol{
+list-style: none;
+margin-left:150px ;
+margin-right: 150px;
+padding-bottom: 30px;
+font-size: 18px;
+font-weight: 500;
+color: rgb(121, 121, 121);
+}
+.footer-menu>ol>li{
+  display: inline;
+  padding-left: 30px;
+}
+/* .footer-menu>ol>li>.country{
+  padding-left: -200px;
+} */
+.footer-menu{
+  margin-left: 10px;
+}
+.paragraph{
+  margin-left:210px ;
+  margin-right: 210px;
+  font-size: 0.9em;
+}
